@@ -8,6 +8,25 @@
     border: 2px solid #a40000;
   }
 
+  /* -- Working paragraphs for Tumblr skin
+  
+  This fixes an issue where AO3 randomly adds paragraph breaks to HTML & therefore breaks code--*/
+
+.tumblr-postcontentcontainer .tumblr-postcontent .para {
+    margin-bottom: .75em;
+    display: block;
+  
+  }
+  
+  .tumblr-postcontentcontainer .tumblr-postcontent p {
+    margin-bottom: .75em;
+    display: block;
+  
+  }
+  
+  
+  
+
 /* -- Tumblr Posts -- */ 
 
     .tumblr-container p {
