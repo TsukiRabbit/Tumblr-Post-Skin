@@ -1,5 +1,33 @@
 
+    
+<!-- Single Tumblr Post --> 
+
+
     <div class="tumblr-container">
+      <div class="tumblr-hover-container"> <div class="tumblr-header">
+        <b class="tumblr-user">USER</b>
+      </div>
+      <div class="tumblr-postcontentcontainer">
+        <div class="tumblr-postcontent">
+          <p>POST CONTENT GOES HERE</p>
+
+        </div>
+      </div>
+      <div class="tumblr-postfooter">
+       <a class="tumblr-tag">#TAG</a> <a class="tumblr-tag">#TAG</a>
+        <br />
+        <div class="tumblr-notes-container"><b class="tumblr-notes">NOTE COUNT</b><span class="hide"> notes</span></div>
+      </div>
+    </div>
+
+
+
+
+
+
+<!-- REBLOG CHAIN --> 
+
+<div class="tumblr-container">
       <div class="tumblr-header reblog">
         <b class="tumblr-user">USER1</b
         ><span class="tumblr-says-reblogged"> reblogged </span
@@ -23,7 +51,7 @@
         </div>
       </div>
 
-      <!-- Reblog Chain Final Post -->
+<!-- Reblog Chain Final Post -->
 
 
             <div class="tumblr-postcontentcontainer">
@@ -36,7 +64,7 @@
               </div>
             </div>
       
-            <!-- TAGS AND NOTES-->
+<!-- TAGS AND NOTES-->
 
       <div class="tumblr-postfooter">
         <a class="tumblr-tag">#TAG</a> <a class="tumblr-tag">#TAG</a>
@@ -47,24 +75,4 @@
       
       </div> 
 
-    </div>
-
-    <!-- Single Tumblr Post --> 
-
-
-    <div class="tumblr-container">
-      <div class="tumblr-hover-container"> <div class="tumblr-header">
-        <b class="tumblr-user">USER</b>
-      </div>
-      <div class="tumblr-postcontentcontainer">
-        <div class="tumblr-postcontent">
-          <p>POST CONTENT GOES HERE</p>
-
-        </div>
-      </div>
-      <div class="tumblr-postfooter">
-       <a class="tumblr-tag">#TAG</a> <a class="tumblr-tag">#TAG</a>
-        <br />
-        <div class="tumblr-notes-container"><b class="tumblr-notes">NOTE COUNT</b><span class="hide"> notes</span></div>
-      </div>
     </div>
