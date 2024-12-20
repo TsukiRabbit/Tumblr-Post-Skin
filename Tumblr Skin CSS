@@ -1,0 +1,288 @@
+/* -- Hides Text -- */ 
+
+.hide {
+    display: none;
+  }
+  /* -- General Customization -- */
+  hr {
+    border: 2px solid #a40000;
+  }
+
+/* -- Tumblr Posts -- */ 
+
+    .tumblr-container p {
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      display: inline;
+    }
+
+    .tumblr-container a {
+      background-color: transparent;
+      text-decoration: underline;
+      color: black;
+    }
+
+
+          .tumblr-container { 
+            max-width: 500px;
+            border-radius: 5px;
+            border-width: 1px;
+            background-color: white;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            margin: 2em auto;
+            line-height: 1.5em;
+            overflow: hidden;
+            word-break: break-word;
+            font-size: 14px; /* Change font size */ 
+            font-family: "Gibson", "Favorit", "Helvetica Neue", "HelveticaNeue",
+              Helvetica, Arial, sans-serif;
+             min-height: 100px;
+             color: black;
+             box-shadow: #011935 1px 4px 10px; /* Delete this to remove the box shadow. Note: if doing so, change 'border: transparent' to 'border: solid'or else there will be no border at all*/ 
+             border: transparent #e7e7e7 1px; /* If removing box shadow, change 'transparent' to 'solid' */
+          }
+    
+          .tumblr-header {
+            position: relative;
+            padding: 1em 0;
+            padding-bottom: 30px;
+            cursor: pointer;
+    
+            /*hover effect*/
+          }
+    
+          .tumblr-header:hover {
+            opacity: 0.7;
+            transition: 0.1s;
+          } 
+          .tumblr-header.reblog::after {
+            content: "";
+            position: absolute;
+            left: -50px;
+            right: -50px;
+            bottom: 0;
+            border-bottom: 1px solid #e7e7e7;
+          }
+    
+          .tumblr-postcontentcontainer {
+            position: relative;
+            margin: 0 auto;
+            width: 1;
+          }
+    
+          .tumblr-postcontentcontainer.reblog::after {
+            content: "";
+            position: absolute;
+            left: -50px;
+            right: -50px;
+            bottom: 0;
+            border-bottom: 1px solid #e7e7e7;
+          }
+    
+          .tumblr-reblogchild-header {
+            max-width: 100%;
+            max-height: 100%; 
+            padding: 1em 0;
+            padding-bottom: 1em 0;
+            cursor: pointer;
+            position: relative;
+        z-index: 1;
+          }
+    
+        .tumblr-reblogchild-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100px;
+        right: -100px; 
+        bottom: 0;
+        background-color: #F5F5F5;
+        z-index: -1;
+        transition: background-color 0.3s;
+        opacity: 0;
+    }
+    
+    
+    
+    .tumblr-reblogchild-header:hover::before {
+        opacity: 1;
+        transition: 0.3s;
+    }
+    
+          .tumblr-postcontent {
+            position: relative;
+            padding-bottom: 1em;
+          }
+    
+          .tumblr-postfooter {
+            max-width: 100%; 
+            max-height: 100%; 
+            position: relative;
+          }
+    
+          .tumblr-notes {
+            font-size: .9em;
+            font-weight: bold;
+            color: #595959;
+            border: 1px solid #d9d9d9;
+            border-radius: 18px;
+            padding: 6px 16px;
+          }
+    
+          .tumblr-notes::after {
+            content: " notes";
+            color: #595959;
+          }
+    
+          .tumblr-notes:hover {
+            cursor: pointer;
+          }
+    
+          .tumblr-user {
+            
+          }
+    
+          .tumblr-user.follow::after {
+            content:'\00A0\00A0 Follow';
+            color: #00B8FF;
+          }
+
+          .tumblr-user.blackcat::after {
+            content: "";
+            display: inline-block;
+            background-image: url('https://i.imgur.com/2os4ZRC.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 1em; /* Set the desired width */
+            height: 1em; /* Set the desired height */
+            margin: 0em .2em;
+        }
+
+.tumblr-user.verified::after {
+content: "";
+display: inline-block;
+background-image: url('https://i.imgur.com/Ksdbdqj.png'), url('https://i.imgur.com/Ksdbdqj.png');
+background-size: 1em 1em; /* Adjust size of each image */
+background-repeat: no-repeat;
+background-position: left center, right center;
+width: 2.2em; /* Increase width to add space between images */
+height: 1em; /* Ensure height matches image size */
+margin: 0em .2em;
+}
+ 
+    
+          .tumblr-user.follow:hover::after {
+            content:'\00A0\00A0 Follow';
+            color: #973ff4;
+            transition: 0.3s;
+          }
+    
+          .tumblr-user.reblogged {
+            color: #595959;
+          }
+    
+          .tumblr-says-reblogged {
+            color: #595959;
+          }
+          .tumblr-container .tumblr-tag {
+            cursor: pointer;
+            position: relative;
+            margin: 5px, 5px, 5px, 0px;
+            text-decoration: none;
+            border-bottom: none;
+          }
+  
+      .tumblr-container .tumblr-tag {
+            text-decoration: none;
+            border-bottom: none;
+            color: #595959;
+          }
+      .tumblr-container .tumblr-tag a:visited {
+            text-decoration: none;
+            border-bottom: none;
+            color: #595959;
+          }
+
+            .tumblr-tag a:hover {
+              text-decoration-line: underline;
+              color: #595959;
+            } 
+          
+
+          .tumblr-tag:hover {
+            text-decoration-line: underline;
+            background-color: none;
+          }
+          .tumblr-container a {
+            border: none;
+          }
+          
+          .tumblr-container a:link {
+            border: none;
+          }
+          
+          .tumblr-container a:visited:hover {
+            border: none;
+          }
+          
+          .tumblr-container .userstuff {
+            border: none;
+          }
+          
+          a:hover {
+            background-color: transparent;
+          }
+          
+    
+    .tumblr-notes-container {
+      display: flex; 
+      align-items: center; 
+      position: relative;
+      padding-top: 1.5em;
+      padding-bottom: 0px;
+ 
+    }
+    
+    
+    .tumblr-notes-img {
+    display: none;
+            height: auto;
+            position: absolute;
+            bottom: 15px;
+            right: 6px;
+            max-width: 160px;
+            width: 50%;
+            z-index: 0;
+            cursor: pointer;
+          }
+    
+    .tumblr-notes {
+            font-size: .9em;
+            font-weight: bold;
+            color: #595959;
+            border: 1px solid #d9d9d9;
+            border-radius: 18px;
+            padding: 6px 16px;
+            position: relative;
+            margin: 5px;
+            background-color: white;
+            z-index: 1;
+          }
+    
+          .tumblr-notes::after {
+            content: " notes";
+            color: #595959; 
+          }
+    
+    
+          .tumblr-notes:hover {
+            cursor: pointer;
+          }
+
+         .tumblr-container ul {
+            padding-left: .03em;
+            }
